@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="TemplateData/unityloader41.js"></script>
+			<script src="../../aboutblank.js"></script>
+		<div style="position: fixed; z-index: 99999999999999999;">
+			<a onclick="switchtourl('/games')"><button style="position: fixed; height: 50px; margin: 0; left: 0;">GO BACK TO GAMES</button></a>
+		</div>
     <script>
         var gameInstance = UnityLoader.instantiate("gameContainer", "Build/slope.json", { onProgress: UnityProgress, Module: { onRuntimeInitialized: function() { UnityProgress(gameInstance, "complete") } } });
     </script>
